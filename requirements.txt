@@ -1,0 +1,9 @@
+pandas
+numpy
+regex
+ftfy
+openpyxl
+gensim
+scikit-learn
+tqdm
+unicodedata2
