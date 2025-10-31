@@ -37,11 +37,11 @@ The Word2Vec (W2V) and FastText (FT) models were trained using optimized paramet
 | Parameter | Word2Vec (Skip-gram) | FastText |
 | :--- | :--- | :--- |
 | **Algorithm** | Skip-gram | Skip-gram |
-| **Vector Size** | 100 | 100 |
-| **Window Size** | 5 | 5 |
-| **Min Count** | 5 | 5 |
-| **Subword N-grams** | N/A | Min=3, Max=6 |
-| **Epochs** | 15 | 15 |
+| **Vector Size** | 400 | 400 |
+| **Window Size** | 10 | 10 |
+| **Min Count** | 1 | 1 |
+| **Subword N-grams** | N/A | Min=2, Max=7 |
+| **Epochs** | 50 | 50 |
 
 ---
 
@@ -56,11 +56,11 @@ This metric confirms the high quality of the preprocessing stage, with both mode
 
 | Evaluation File | W2V Coverage | FT Coverage |
 | :--- | :--- | :--- |
-| labeled-sentiment\_2col.xlsx | 0.957 | 0.957 |
+| labeled-sentiment\_2col.xlsx | 1.000 | 1.000 |
 | test\_\_1\_\_2col.xlsx | 1.000 | 1.000 |
 | train\_\_3\_\_2col.xlsx | 1.000 | 1.000 |
-| train-00000-of-00001\_2col.xlsx | 0.966 | 0.966 |
-| merged\_dataset\_CSV\_\_1\_\_2col.xlsx | 0.967 | 0.967 |
+| train-00000-of-00001\_2col.xlsx | 1.000 | 1.000 |
+| merged\_dataset\_CSV\_\_1\_\_2col.xlsx | 1.000 | 1.000 |
 
 #### 🚀 Semantic Relationship Scores
 The scores below quantify the models' success in grouping related words (Synonyms) and distancing contrasting words (Antonyms and Separation). **FastText demonstrated superior performance in all semantic tasks.**
